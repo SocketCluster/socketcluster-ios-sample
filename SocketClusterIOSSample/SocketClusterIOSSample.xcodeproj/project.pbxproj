@@ -10,9 +10,11 @@
 		D2B3CBB41AFCDB4E00ACD2A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B3CBB31AFCDB4E00ACD2A6 /* main.m */; };
 		D2B3CBB71AFCDB4E00ACD2A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B3CBB61AFCDB4E00ACD2A6 /* AppDelegate.m */; };
 		D2B3CBBA1AFCDB4E00ACD2A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B3CBB91AFCDB4E00ACD2A6 /* ViewController.m */; };
-		D2B3CBBD1AFCDB4E00ACD2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B3CBBB1AFCDB4E00ACD2A6 /* Main.storyboard */; };
 		D2B3CBBF1AFCDB4E00ACD2A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B3CBBE1AFCDB4E00ACD2A6 /* Images.xcassets */; };
 		D2B3CBC21AFCDB4E00ACD2A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B3CBC01AFCDB4E00ACD2A6 /* LaunchScreen.xib */; };
+		D2B3CBE01AFCDC9000ACD2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B3CBDF1AFCDC9000ACD2A6 /* Main.storyboard */; };
+		D2B8814C1AFCEAFA0059FBF9 /* SocketClusteriOSBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2B8814B1AFCEAFA0059FBF9 /* SocketClusteriOSBundle.bundle */; };
+		D2B8814D1AFCEB350059FBF9 /* libSocketClusteriOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B881491AFCEAF40059FBF9 /* libSocketClusteriOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +25,13 @@
 		D2B3CBB61AFCDB4E00ACD2A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D2B3CBB81AFCDB4E00ACD2A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D2B3CBB91AFCDB4E00ACD2A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D2B3CBBC1AFCDB4E00ACD2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2B3CBBE1AFCDB4E00ACD2A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D2B3CBC11AFCDB4E00ACD2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D2B3CBDF1AFCDC9000ACD2A6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2B881451AFCEAE40059FBF9 /* SocketCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketCluster.h; sourceTree = "<group>"; };
+		D2B881461AFCEAE40059FBF9 /* SocketClusterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClusterDelegate.h; sourceTree = "<group>"; };
+		D2B881491AFCEAF40059FBF9 /* libSocketClusteriOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocketClusteriOS.a; sourceTree = "<group>"; };
+		D2B8814B1AFCEAFA0059FBF9 /* SocketClusteriOSBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SocketClusteriOSBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B8814D1AFCEB350059FBF9 /* libSocketClusteriOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 		D2B3CBA51AFCDB4E00ACD2A6 = {
 			isa = PBXGroup;
 			children = (
+				D2B881491AFCEAF40059FBF9 /* libSocketClusteriOS.a */,
+				D2B881431AFCEAE40059FBF9 /* include */,
 				D2B3CBB01AFCDB4E00ACD2A6 /* SocketClusterIOSSample */,
 				D2B3CBAF1AFCDB4E00ACD2A6 /* Products */,
 			);
@@ -58,11 +67,12 @@
 		D2B3CBB01AFCDB4E00ACD2A6 /* SocketClusterIOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				D2B8814B1AFCEAFA0059FBF9 /* SocketClusteriOSBundle.bundle */,
 				D2B3CBB51AFCDB4E00ACD2A6 /* AppDelegate.h */,
 				D2B3CBB61AFCDB4E00ACD2A6 /* AppDelegate.m */,
 				D2B3CBB81AFCDB4E00ACD2A6 /* ViewController.h */,
 				D2B3CBB91AFCDB4E00ACD2A6 /* ViewController.m */,
-				D2B3CBBB1AFCDB4E00ACD2A6 /* Main.storyboard */,
+				D2B3CBDF1AFCDC9000ACD2A6 /* Main.storyboard */,
 				D2B3CBBE1AFCDB4E00ACD2A6 /* Images.xcassets */,
 				D2B3CBC01AFCDB4E00ACD2A6 /* LaunchScreen.xib */,
 				D2B3CBB11AFCDB4E00ACD2A6 /* Supporting Files */,
@@ -77,6 +87,23 @@
 				D2B3CBB31AFCDB4E00ACD2A6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2B881431AFCEAE40059FBF9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D2B881441AFCEAE40059FBF9 /* SocketClusteriOS */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D2B881441AFCEAE40059FBF9 /* SocketClusteriOS */ = {
+			isa = PBXGroup;
+			children = (
+				D2B881451AFCEAE40059FBF9 /* SocketCluster.h */,
+				D2B881461AFCEAE40059FBF9 /* SocketClusterDelegate.h */,
+			);
+			path = SocketClusteriOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +163,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B3CBBD1AFCDB4E00ACD2A6 /* Main.storyboard in Resources */,
 				D2B3CBC21AFCDB4E00ACD2A6 /* LaunchScreen.xib in Resources */,
+				D2B8814C1AFCEAFA0059FBF9 /* SocketClusteriOSBundle.bundle in Resources */,
 				D2B3CBBF1AFCDB4E00ACD2A6 /* Images.xcassets in Resources */,
+				D2B3CBE01AFCDC9000ACD2A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2B3CBBB1AFCDB4E00ACD2A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2B3CBBC1AFCDB4E00ACD2A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2B3CBC01AFCDB4E00ACD2A6 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,6 +283,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SocketClusterIOSSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SocketClusterIOSSample",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -273,6 +299,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SocketClusterIOSSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SocketClusterIOSSample",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -296,6 +328,7 @@
 				D2B3CBD31AFCDB4E00ACD2A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
