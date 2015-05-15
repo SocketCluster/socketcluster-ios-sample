@@ -1,0 +1,3 @@
+platform :ios, '8.0'
+
+pod 'SocketClusteriOS', '0.2.0'

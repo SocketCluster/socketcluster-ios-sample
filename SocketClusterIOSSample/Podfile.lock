@@ -1,0 +1,10 @@
+PODS:
+  - SocketClusteriOS (0.2.0)
+
+DEPENDENCIES:
+  - SocketClusteriOS (= 0.2.0)
+
+SPEC CHECKSUMS:
+  SocketClusteriOS: 5dad9fc63b990b388c0f94c679993db0f07d5f90
+
+COCOAPODS: 0.36.3
