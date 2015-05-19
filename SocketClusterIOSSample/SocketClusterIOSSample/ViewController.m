@@ -71,9 +71,9 @@
 {
     [self logMessage:@"Disconnected"];
 }
-- (void)socketClusterOnError
+- (void)socketClusterOnError:(NSString *)errorString
 {
-    [self logMessage:@"Error"];
+    [self logMessage:errorString];
 }
 
 - (IBAction)emitBtnTapped
